@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid grey;
+}
+.hero {
+  padding-left: 200px;
+  padding-top: 150px;
+  border: 5px solid grey;
+  color:white;
+  background:rgba(132, 77, 246, 0.8) url("./assets/hero.png") right no-repeat;
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.joinForm {
+  border: 5px solid grey;
+  background: rgba(132, 77, 246, 0.8) url("./assets/mailinglist.png") right no-repeat;
+  background-size: cover;
+}
+.join {
+  font-size: 35px;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 0;
+  font-weight:300;
+}
+.formInputs {
+  display: flex;
+}
+.button {
+  border-radius: 0;
+  background-color:#5b1bf0;
+  color: white;
+}
+.buttonContainer {
+  display: flex;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mailingList {
+  text-align: center;
+  color: white;
+  font-size: 43px;
+}
+.formContainer {
+  width: 50%;
+}
+.tableContainer {
+  display: flex;
+  border: 5px solid grey;
+  background-color:rgb(219, 219, 219);
+}
+.currentTable {
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+.singleInput {
+  width: 300px;
+  height: 40px;
+  border: none;
+}
+.currentCoaches {
+  text-align: center;
+  color:#5b1bf0;
+  font-size: 35px;
+}
+.coachImage {
+  width: 50%;
+  background-image: url("./assets/coaching.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.table {
+  display: flex;
+  background-color: white;
+}
+.column {
+  margin-bottom: 1em;
+  width: auto;
+  text-align:center;
+}
+.row {
+  border-top: 1px  rgb(128, 125, 125) solid;
+  padding: 5px;
+  height: 3em;
+  margin: auto;
+  width: auto;
+  text-align: center; 
+}
+.formContainer {
+  width: auto;
+  display:flex;
+  padding: 30px;
+  margin: 100px;
+  background-color:rgb(173, 173, 169);
+  opacity: .90;
+}
+
+
