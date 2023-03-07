@@ -60,22 +60,19 @@ app.post("/reservation", (req, res) => {
     // - An event reservation must not overlap an existing reservation for that user
     const { user, event, startTime, endTime } = req.body;
     const date = new Date()
-    res.json(        
-        {
-          "user": "myusername",
-          "event": "Global Hack-a-thon",
-          "startTime": "2022-01-04T15:00:00Z",
-          "endTime": "2022-01-07T00:00:00Z",
-        });
-
-        //write conditionals for responses here
-        if (date < startTime) {
-            res.send(`${200} successful`);
-        }
-        else if(date === startTime || date > startTime){
-            res.send(`${500} Error: event has passed`);
-        }
-
+      //write conditionals for responses here
+      if (date < startTime) {
+        res.status(200).json(  {
+            user,
+            event,
+            startTime, 
+            endTime
+          });
+    }
+    else if(date === startTime || date > startTime){
+        res.send(`${400} Error: event has passed`);
+    }
+    
   });
 
 // Informational responses (100 – 199)
