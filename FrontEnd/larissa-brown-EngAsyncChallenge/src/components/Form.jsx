@@ -33,10 +33,13 @@ export default function Forms() {
               <div>
               <label className="Label" >Full Name</label>
               <input type="text" name="name" id="name" className="singleInput" onChange={handleOnChangeName} placeholder="Jane Doe"></input>
+              <small></small>
               <label className="Label" >Email</label>
               <input type="email" name="email" id="email"className="singleInput" onChange={handleOnChangeEmail} placeholder="jane_doe@email.com"></input>
+              <small></small>
               <label className="Label" >Industry</label>
               <input type="text" name="industry" id="industry" className="singleInput" onChange={handleOnChangeIndustry} placeholder="E-Sports"></input>
+              <small></small>
               </div>
               <div className="buttonContainer">
                 <h3 className="join">Join our mailing to recieve notifications about program availability and special discounts</h3>
