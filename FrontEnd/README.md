@@ -15,6 +15,7 @@ completed:
 
 Outstanding work to be completed:
 purple overlay on background-image for Hero and Forms Components
+form validation
 
 
 
